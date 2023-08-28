@@ -29,7 +29,7 @@ def ExceptSizeArrayBookmarks(thisArrayNow, valueSizeBookmarks):
 
 def listURLS(id_table, add_token, array_bookmark):
   if len(array_bookmark)>3000:
-    viewPost('id_table', 'add_token', listToString(ExceptSizeArrayBookmarks(array_bookmark, 100))) # 100.000 or 10.000 or 30.000 or 5.000  bookmarks /100 to table
+    viewPost(id_table, add_token, listToString(ExceptSizeArrayBookmarks(array_bookmark, 100))) # 100.000 or 10.000 or 30.000 or 5.000  bookmarks /100 to table
   else:
     return array_bookmark
 

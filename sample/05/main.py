@@ -14,10 +14,13 @@ def getBase(id, token):
 def postBase(id, token, string):
   return requests.post(apiGet(id), headers=apiHeader(token), json={"urlName":string})
 
+def listToString(array):
+  return ' '.join([str(urlName) for urlName in array])
+  
 def forEach(list, function):
     for i, v in enumerate(list):
-        function(v, i, ' '.join([str(urlName) for urlName in list]))
-      
+        function(v, i, listToString(list))
+
 def ExceptSizeArrayBookmarks(thisArrayNow, valueSizeBookmarks):
   arrays = []
   for i in range(0, len(thisArrayNow), valueSizeBookmarks):
@@ -29,9 +32,6 @@ def listURLS(array_bookmark):
     viewPost('id_table', 'add_token', listToString(ExceptSizeArrayBookmarks(array_bookmark, 100))) # 100.000 or 10.000 or 30.000 or 5.000  bookmarks /100 to table
   else:
     return array_bookmark
-
-def listToString(array):
-  return ' '.join([str(urlName) for urlName in array])
 
 def viewPost(idTable, token, arrayMap):
   return postBase(idTable, token, arrayMap)

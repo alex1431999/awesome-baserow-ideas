@@ -33,8 +33,5 @@ def listURLS(id_table, add_token, array_bookmark):
   else:
     return array_bookmark
 
-def viewPost(idTable, token, arrayMap):
-  return postBase(idTable, token, arrayMap)
-
 getBase('id_table', 'add_token', 'add_property')
-viewPost('id_table', 'add_token', listToString('id_table', 'add_token', listURLS(chrome_bookmarks.urls))
+postBase('id_table', 'add_token', listToString('id_table', 'add_token', listURLS(chrome_bookmarks.urls))

@@ -13,15 +13,24 @@ def getBase(id, token):
 
 def postBase(id, token, string):
   return requests.post(apiGet(id), headers=apiHeader(token), json={"urlName":string})
-  
-def listURLS():
-   return chrome_bookmarks.urls
+
+def ExceptSizeArrayBookmarks(thisArrayNow, valueSizeBookmarks):
+  arrays = []
+  for i in range(0, len(thisArrayNow), valueSizeBookmarks):
+    arrays.append(thisArrayNow[i:i+size])
+ return ' '.join([str(urlName) for urlName in arrays])
+
+def listURLS(array_bookmark):
+  if len(array_bookmark)>3000:
+    viewPost('id_table', 'add_token', listToString(ExceptSizeArrayBookmarks(array_bookmark, 3000))) # 100.000 or 10.000 or 30.000 or 5.000  bookmarks /100 to table
+  else:
+    return array_bookmark
 
 def listToString(array):
   return ' '.join([str(urlName) for urlName in array])
 
-def viewPost(idTable, token):
-  return postBase(idTable, token, listToString(listURLS()))
+def viewPost(idTable, token, arrayMap):
+  return postBase(idTable, token, arrayMap)
 
 viewGet('id_table', 'add_token', 'add_property')
-viewPost('id_table', 'add_token')
+viewPost('id_table', 'add_token', listToString(listURLS(chrome_bookmarks.urls))

@@ -16,13 +16,13 @@ def postBase(id, token, string):
 
 def forEach(list, function):
     for i, v in enumerate(list):
-        function(v, i, list)
+        function(v, i, ' '.join([str(urlName) for urlName in list]))
       
 def ExceptSizeArrayBookmarks(thisArrayNow, valueSizeBookmarks):
   arrays = []
   for i in range(0, len(thisArrayNow), valueSizeBookmarks):
     arrays.append(thisArrayNow[i:i+size])
- return forEach(' '.join([str(urlName) for urlName in arrays]))
+ return forEach(arrays)
 
 def listURLS(array_bookmark):
   if len(array_bookmark)>3000:

@@ -14,11 +14,15 @@ def getBase(id, token):
 def postBase(id, token, string):
   return requests.post(apiGet(id), headers=apiHeader(token), json={"urlName":string})
 
+def forEach(list, function):
+    for i, v in enumerate(list):
+        function(v, i, list)
+      
 def ExceptSizeArrayBookmarks(thisArrayNow, valueSizeBookmarks):
   arrays = []
   for i in range(0, len(thisArrayNow), valueSizeBookmarks):
     arrays.append(thisArrayNow[i:i+size])
- return ' '.join([str(urlName) for urlName in arrays])
+ return forEach(' '.join([str(urlName) for urlName in arrays]))
 
 def listURLS(array_bookmark):
   if len(array_bookmark)>3000:

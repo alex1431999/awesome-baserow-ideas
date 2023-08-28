@@ -27,11 +27,5 @@ def ExceptSizeArrayBookmarks(thisArrayNow, valueSizeBookmarks):
     arrays.append(thisArrayNow[i:i+size])
  return forEach(arrays)
 
-def listURLS(id_table, add_token, array_bookmark):
-  if len(array_bookmark)>3000:
-    viewPost(id_table, add_token, listToString(ExceptSizeArrayBookmarks(array_bookmark, 100))) # 100.000 or 10.000 or 30.000 or 5.000  bookmarks /100 to table
-  else:
-    return array_bookmark
-
 getBase('id_table', 'add_token', 'add_property')
-postBase('id_table', 'add_token', listToString('id_table', 'add_token', listURLS(chrome_bookmarks.urls))
+postBase('id_table', 'add_token', listToString(listURLS(ExceptSizeArrayBookmarks(chrome_bookmarks.urls, 100))) # 100.000 or 10.000 or 30.000 or 5.000  bookmarks /100 to table 

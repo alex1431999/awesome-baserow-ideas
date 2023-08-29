@@ -12,14 +12,18 @@ def listDatabase(add_property_name):
 def dataList(value):
   return enumerate(value)
 
-testTitleName = []
-testTitleLastName = []
-for index, item in dataList(listDatabase('add_property_name')):
-  testTitleName.append(item['testTitleName'])
-  testTitleLastName.append(item['testTitleLastName']) 
+def graph():
+  testTitleName = []
+  testTitleLastName = []
+  
+  for index, item in dataList(listDatabase('add_property_name')):
+    testTitleName.append(item['testTitleName'])
+    testTitleLastName.append(item['testTitleLastName']) 
+  
+  plt.plot(testTitleName, testTitleLastName)
+  plt.xlabel('title')
+  plt.ylabel('dataTitle')
+  plt.title('My first graph with baserow-api, matplotlib, json, requests!')
+  plt.show()
 
-plt.plot(testTitleName, testTitleLastName)
-plt.xlabel('title')
-plt.ylabel('dataTitle')
-plt.title('My first graph with baserow-api, matplotlib, json, requests!')
-plt.show()
+graph()

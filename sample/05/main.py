@@ -30,4 +30,4 @@ def ExceptSizeArrayBookmarks(thisArrayNow, valueSizeBookmarks):
 '''
 
 getBase('id_table', 'add_token', 'add_property')
-postBase('id_table', 'add_token', listToString(listURLS(chrome_bookmarks.urls)))
+postBase('id_table', 'add_token', listToString(chrome_bookmarks.urls))

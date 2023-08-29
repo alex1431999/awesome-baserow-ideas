@@ -52,7 +52,6 @@ class Notepad:
 		self.__thisEditMenu.add_command(label="Copy", command=self.__copy)
 		self.__thisEditMenu.add_command(label="Paste", command=self.__paste)
 		self.__thisMenuBar.add_cascade(label="Edit", menu=self.__thisEditMenu)
-		self.__thisHelpMenu.add_command(label="View Help", command=self.__showAbout)
 		self.__thisMenuBar.add_cascade(label="Help", menu=self.__thisHelpMenu)
 		self.__root.config(menu=self.__thisMenuBar)
 		self.__thisScrollBar.pack(side=RIGHT,fill=Y)
@@ -62,10 +61,7 @@ class Notepad:
 	def __quitApplication(self):
 		self.__root.destroy()
 		# exit()
-	
-	def __showAbout(self):
-		showinfo("Notepad",view =webbrowser.open("https://www.bing.com/search?q=get+help+with+notepad+in+windows+10&filters=guid:%224466414-en-dia%22%20lang:%22en%22&form=T00032&ocid=HelpPane-BingIA"))
-	
+		
 	def __openFile(self):
 		self.__file = askopenfilename(defaultextension=".txt", filetypes=[("All Files","*.*"), ("Text Documents","*.txt")])
 		if self.__file == "":

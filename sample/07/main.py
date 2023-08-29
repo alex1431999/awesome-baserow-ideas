@@ -27,8 +27,10 @@ def viewGet(idTable, token, property):
     public_key.append(item['public_key'])
   print('public_key: ', public_key)
 
-array_map = [private_key.bech32(), public_key.bech32()] 
-for key in in array_map:
-  postBase('add_table_id', 'add_token', key)
+def main():
+  array_map = [private_key.bech32(), public_key.bech32()] 
+  for key in in array_map:
+    postBase('add_table_id', 'add_token', key)
+  print({'public_key': key[0], 'private_key': key[1]})
 
-print({'public_key': key[0], 'private_key': key[1]})
+main()

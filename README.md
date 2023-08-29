@@ -25,4 +25,5 @@
 | 22 | [22](sample/22/main.py) | export json to bookmarks  | cli | mvp/poc | 
 
 ## Licensed
-The unlicensed, public source
+- The unlicensed, public source
+- Baserow: baserow is a registered trademark of the baserow community and the open source baserow tool, I do not use the name baserow to promote any algorithms developed here, nor do I use and do not have any rights to endorse any positions of the company, community here.

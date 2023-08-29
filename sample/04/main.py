@@ -23,7 +23,7 @@ def ExportJson():
   
 def ExportCSV():
   # arr = np.arange(testTitleName).reshape(testTitleLastName)  # arr = np.arange(1,11).reshape(2,5)
-  dataFrame  = pd.DataFrame(ArrayMap()[1]) # pd.DataFrame(testTitleName)
+  dataFrame  = pd.DataFrame(ArrayMap()) # pd.DataFrame(testTitleName)
   dataFrame.to_csv("my_data_baserow.csv")
   
 ExportCSV()

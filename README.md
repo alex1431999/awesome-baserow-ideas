@@ -27,3 +27,5 @@
 ## License
 - This source-code is licensed with "unlicensed", is "public source"
 - Copyright: Baserow is a registered trademark of the Baserow community and the open source tool: Baserow. I do not use the name "Baserow" to promote any algorithms developed here, nor do I use and do not have any rights to endorse any positions of the company, community or tool here.
+- I would like to contribute a lot of ideas here, and I feel like innovating or creating things. Some base code is MIT licensed and publicly available on GitHub.
+- Some algorithm ideas are community licensed (some algorithms I developed to answer technical questions or demonstrate ideas) Baserow, which is publicly available

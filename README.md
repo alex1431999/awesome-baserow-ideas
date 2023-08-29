@@ -6,7 +6,7 @@
 | 02 | [04](sample/04/main.py) |  [Export baserow data as csv](https://community.baserow.io/t/export-baserow-data-as-csv/3277) | cli | mvp/poc | 
 | 03 | [01](sample/01/main.py), [03](sample/03/main.py) | [“Graphic mode in Baserow” with python-baserow-client, plotly](https://community.baserow.io/t/graphic-mode-in-baserow-with-python-baserow-client-plotly/3265) | cli | mvp/poc | 
 | 04 | [05](sample/05/main.py) | [Import information from bookmarks for Baserow with python](https://community.baserow.io/t/import-information-from-bookmarks-for-baserow-with-python/3275/1) | cli | mvp/poc | 
-| 05 | [08](sample/01/main.py) |  [Is it possible to encrypt data with Public Key/ Private Key in Baserow?](https://community.baserow.io/t/is-it-possible-to-encrypt-data-with-public-key-private-key-in-baserow/402)  | cli | mvp/poc | 
+| 05 | [08](sample/08/main.py) |  [Is it possible to encrypt data with Public Key/ Private Key in Baserow?](https://community.baserow.io/t/is-it-possible-to-encrypt-data-with-public-key-private-key-in-baserow/402)  | cli | mvp/poc | 
 | 06 | [09](sample/01/main.py) | [Using the Baserow api to import tasks from a txt file(todo.xt)](https://community.baserow.io/t/using-the-baserow-api-to-import-tasks-from-a-txt-file-todo-xt/3276)  | cli | mvp/poc | 
 | 07 | [10](sample/01/main.py) | Baserow-desktop: tkinter csv editor sync baserow  | gui | mvp/poc | 
 | 08 | [11](sample/01/main.py) | Python GUI app to encrypt and decrypt messages. Implemented using the pybase4 module for encryption decryption and tkinter module for the GUI.. sync with baserow | cli | mvp/poc | 

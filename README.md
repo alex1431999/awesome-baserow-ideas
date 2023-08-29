@@ -23,3 +23,6 @@
 | 20 | [20](sample/20/main.py) | import/export bookamarks  | cli | mvp/poc | 
 | 21 | [21](sample/21/main.py) | import bookmarks  | cli | mvp/poc |
 | 22 | [22](sample/22/main.py) | export json to bookmarks  | cli | mvp/poc | 
+
+## Licensed
+The unlicensed, public source

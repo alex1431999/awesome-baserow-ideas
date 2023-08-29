@@ -26,4 +26,4 @@
 
 ## License
 - The unlicensed, public source
-- Copyright: Baserow is a registered trademark of the Baserow community and the open source Baserow tool. I do not use the name baserow to promote any algorithms developed here, nor do I use and do not have any rights to endorse any positions of the company, community or tool here.
+- Copyright: Baserow is a registered trademark of the Baserow community and the open source Baserow tool. I do not use the name "Baserow" to promote any algorithms developed here, nor do I use and do not have any rights to endorse any positions of the company, community or tool here.

@@ -70,8 +70,13 @@ add image
 
 ## **4. Final considerations**
 **4.1** What do you all think of this idea?
+
 **4.2** This code is in the public domain, use or modify it however you want.
+
 **4.3** The codebase of this code is the same one I developed to generate graphs in Baserow etc
+
 **4.4** This code is something basic for demonstration purposes.
+
 **4.5** I hope to contribute in some way to the Baserow community.
+
 **4.6** If you all have any questions, call me here and I’ll see how I can help

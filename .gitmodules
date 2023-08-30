@@ -1,0 +1,3 @@
+[submodule "backup\\ascii-encryption-python"]
+	path = backup/ascii-encryption-python/
+	url = https://github.com/Kalebu/ascii-encryption-python.git

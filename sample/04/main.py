@@ -2,7 +2,6 @@ import requests
 import json 
 import pandas as pd
 import numpy as np
-import json
 
 def Connect(add_id_table, add_token_baserow):
   return requests.get("https://api.baserow.io/api/database/rows/table/"+add_id_table+"/?user_field_names=true", headers={"Authorization": "Token "+add_token_baserow})

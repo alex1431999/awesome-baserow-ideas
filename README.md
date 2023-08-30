@@ -35,4 +35,4 @@
 
 **5.** Some base code is MIT licensed and publicly available on [GitHub](https://github.com/solarsbeans/awesome-baserow-ideas/).
 
-**6.** Some algorithm ideas are [Baserow community](https://community.baserow.io/) licensed** (some algorithms I developed to answer technical questions or demonstrate ideas) [Baserow](https://baserow.io/), which is publicly available.
+**6.** Some algorithm ideas are [Baserow community](https://community.baserow.io/) licensed (some algorithms I developed to answer technical questions or demonstrate ideas) [Baserow](https://baserow.io/), which is publicly available.

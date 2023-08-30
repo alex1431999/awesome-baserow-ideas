@@ -25,14 +25,20 @@
 | 22 | [22](sample/22/main.py) | export json to bookmarks  | cli | mvp/poc | 
 
 ## License & Disclaimer
-**1.** This source-code is licensed with "unlicensed" or "public source".
+This source-code is licensed with "unlicensed" or "public source".
 
-**2.** Copyright: [Baserow](https://baserow.io/) is a **([trademark](https://baserow.io/) or maybe a trademark registered )** of the [Baserow community](https://community.baserow.io/) and the [Open source tool: Baserow](https://baserow.io/) and [website](https://baserow.io/). 
+Copyright: [Baserow](https://baserow.io/) is a **([trademark](https://baserow.io/) or maybe a trademark registered )** of the [Baserow community](https://community.baserow.io/) and the [Open source tool: Baserow](https://baserow.io/) and [website](https://baserow.io/). 
 
-**3.** I do not use the name "[Baserow](https://baserow.io/)" to promote any algorithms developed here, nor do I use and do not have any rights to endorse any positions of the [company](https://baserow.io/), [community](https://community.baserow.io/) or [tool](https://github.com/bram2w/baserow) here.
+I do not use the name "[Baserow](https://baserow.io/)" to promote any algorithms developed here, nor do I use and do not have any rights to endorse any positions of the [company](https://baserow.io/), [community](https://community.baserow.io/) or [tool](https://github.com/bram2w/baserow) here.
 
-**4.** I would like to contribute a lot of ideas here, and I feel like innovating or creating things.
+I would like to contribute a lot of ideas here, and I feel like innovating or creating things.
 
-**5.** Some base code is MIT licensed and publicly available on [GitHub](https://github.com/solarsbeans/awesome-baserow-ideas/).
+Some base code is MIT licensed and publicly available on [GitHub](https://github.com/solarsbeans/awesome-baserow-ideas/).
 
-**6.** Some algorithm ideas are [Baserow community](https://community.baserow.io/) licensed (some algorithms I developed to answer technical questions or demonstrate ideas) which is publicly available.
+Some algorithm ideas are [Baserow community](https://community.baserow.io/) licensed (some algorithms I developed to answer technical questions or demonstrate ideas) which is publicly available.
+
+Inspired by the "awesome list".
+
+Awesome-Baserow-ideas is licensed with "Unlicensed" by solarsbeans and contributors
+
+The logo of this project is authored, created or licensed by the Baserow community (brand, open source project), but has no direct relationship with this repository

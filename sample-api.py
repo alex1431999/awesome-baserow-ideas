@@ -19,19 +19,19 @@ def objFernet():
  return Fernet(keyFernetGenerator())
 
 def encMessage(message):
- msg = message
- return objFernet().encrypt(msg.encode())
+ return objFernet().encrypt(message.encode())
 
 def decMessage(encMessage):
  return objFernet().decrypt(encMessage).decode()
 
 def cryptMessage(message):
- encMessage = encMessage(message)
- obj = {"original":message, "encyptedMessage":encMessage, "decrypted":decMessage(encMessage)}
- return obj
+ return {"original":message, "encyptedMessage": encMessage(message), "decrypted": decMessage(encMessage)}
 
+def EchoPrintln(message):
+  return print(cryptMessage(message))
+  
 def main(message):
-  print(cryptMessage(message))
+  EchoPrintln(message)
   return postBase('add_table_id', 'add_token_id', str(cryptMessage['encyptedMessage']))
 
 def writeFile(public_keybench32, private_keybench32):
@@ -50,55 +50,41 @@ def readFile():
 def Keys():
   private_key = PrivateKey()
   public_key = private_key.public_key
-  public_keybench32 = public_key.bech32()
-  private_keybench32 = private_key.bech32()
+  return {'public_keybench32': public_key.bech32(), 'private_keybench32': private_key.bech32()}
 
-def apiHeader(token):
+def api_header(token):
   return {"Authorization": "Token " + token, "Content-Type": "application/json"}
   
-def apiGet(id):
+def api_get(id):
   return "https://api.baserow.io/api/database/rows/table/"+id+"/?user_field_names=true"
 
-def getBase(id, token):
-  return requests.get(apiGet(id), headers=apiHeader(token))
+def api_http_get(id, token):
+  return requests.get(api_get(id), headers=api_header(token))
 
-def postBase(id, token, string):
-  return requests.post(apiGet(id), headers=apiHeader(token), json={"urlName":string})
+def json_property(nameProperty, typeProperty):
+  return {nameProperty:type}
+  
+def api_http_post(id, token, string):
+  return requests.post(api_get(id), headers=api_header(token), json=json_property('nameProperty', string))
 
 def listToString(array):
   return ' '.join([str(urlName) for urlName in array])
 
-def Connect(add_id_table, add_token_baserow):
-  return requests.get("https://api.baserow.io/api/database/rows/table/"+add_id_table+"/?user_field_names=true", headers={"Authorization": "Token "+add_token_baserow})
-
-def dataList(value):
+def ListThis(value):
   return enumerate(value)
-  
-def apiHeader(token):
-  return {"Authorization": "Token " + token, "Content-Type": "application/json"}
-  
-def apiGet(id):
-  return "https://api.baserow.io/api/database/rows/table/"+id+"/?user_field_names=true"
-
-def getBase(id, token):
-  return requests.get(apiGet(id), headers=apiHeader(token))
-
-def postBase(id, token, string):
-  return requests.post(apiGet(id), headers=apiHeader(token), json={"cyphertext":string})
-
-def listDatabase(id, token, property):
-  viewList = json.loads(json.dumps(getBase(id, token).json()))
-  return viewList[property]
+    
+def ListOf(id, token, property):
+  return json.loads(json.dumps(getBase(id, token).json()))[property]
 
 def ArrayMap():
-  testTitleName = []
+  array = []
   for index, item in enumerate(listDatabase('add_property_name')):
-    testTitleName.append(item['testTitleName'])
-  return testTitleName
+    array.append(item['testTitleName'])
+  return array
 
 def ExportJson(filename):
   with open(filename, 'w') as f:
-    json.dump(listDatabase('results'), f)
+    json.dump(ListOf('results'), f)
   
 def ExportCSV(filename):
   return pd.DataFrame(ArrayMap()).to_csv(filename)
@@ -108,8 +94,7 @@ def graph(firt_array, end_array):
   plt.xlabel('title')
   plt.ylabel('dataTitle')
   plt.title('My first graph with baserow-api, matplotlib, json, requests!')
-  plt.show()
+  return plt.show()
 
-
-getBase('id_table', 'add_token', 'add_property')
-postBase('id_table', 'add_token', listToString(chrome_bookmarks.urls))
+api_http_get('id_table', 'add_token', 'add_property')
+api_http_post('id_table', 'add_token', listToString(chrome_bookmarks.urls))

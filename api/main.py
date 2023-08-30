@@ -8,6 +8,50 @@ import requests
 import json
 import chrome_bookmarks
 import todotxtio
+from pynostr.key import PrivateKey
+from csv import DictReader
+from cryptography.fernet import Fernet
+
+def keyFernetGenerator():
+  return Fernet.generate_key()
+
+def objFernet():
+ return Fernet(keyFernetGenerator())
+
+def encMessage(message):
+ msg = message
+ return objFernet().encrypt(msg.encode())
+
+def decMessage(encMessage):
+ return objFernet().decrypt(encMessage).decode()
+
+def cryptMessage(message):
+ encMessage = encMessage(message)
+ obj = {"original":message, "encyptedMessage":encMessage, "decrypted":decMessage(encMessage)}
+ return obj
+
+def main(message):
+  print(cryptMessage(message))
+  return postBase('add_table_id', 'add_token_id', str(cryptMessage['encyptedMessage']))
+
+def writeFile(public_keybench32, private_keybench32):
+    with open('password.csv','wb') as file:
+        for line in text:
+            file.write(public_keybench32)
+            file.write(private_keybench32)
+    file.close()
+
+def readFile():
+    with open('password.csv', 'r') as read_obj:
+        csv_dict_reader = DictReader(read_obj)
+        for row in csv_dict_reader:
+            print(row['public_key'], row['private_key'])
+          
+def Keys():
+  private_key = PrivateKey()
+  public_key = private_key.public_key
+  public_keybench32 = public_key.bech32()
+  private_keybench32 = private_key.bech32()
 
 def apiHeader(token):
   return {"Authorization": "Token " + token, "Content-Type": "application/json"}

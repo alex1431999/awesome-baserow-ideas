@@ -1,6 +1,6 @@
 # 🏅 Awesome Baserow Ideas(web-plugins) 🏅
 
-| id          | source_code                             | proposal                                        | type               | status |
+| id          | reference                               | proposal                                        | type               |  status |
 | ----------- | --------------------------------------- | ----------------------------------------------- |--------------------|---------|
 | 01 | [02](sample/02/main.py), [07](sample/07/main.py), [08](sample/08/main.py) | [Does Baserow use end-to-end encryption?](https://community.baserow.io/t/does-baserow-use-end-to-end-encryption/573), nostr-login-baserow, end-to-end   | cli/gui | mvp/poc | 
 | 02 | [04](sample/04/main.py) |  [Export baserow data as csv](https://community.baserow.io/t/export-baserow-data-as-csv/3277) | cli | mvp/poc | 

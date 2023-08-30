@@ -1,5 +1,18 @@
 # 🏅 Awesome Baserow Ideas(web-plugins) 🏅
 
+# Disclaimer
+**1.** This source-code is licensed with "unlicensed" or "public source".
+
+**2.** Copyright: [Baserow](https://baserow.io/) is a **([trademark](https://baserow.io/) or maybe a trademark registered )** of the [Baserow community](https://community.baserow.io/) and the [Open source tool: Baserow](https://baserow.io/) and [website](https://baserow.io/). 
+
+**3.** I do not use the name "[Baserow](https://baserow.io/)" to promote any algorithms developed here, nor do I use and do not have any rights to endorse any positions of the [company](https://baserow.io/), [community](https://community.baserow.io/) or [tool](https://github.com/bram2w/baserow) here.
+
+**4.** I would like to contribute a lot of ideas here, and I feel like innovating or creating things.
+
+**5.** Some base code is MIT licensed and publicly available on [GitHub](https://github.com/solarsbeans/awesome-baserow-ideas/).
+
+**6.** Some algorithm ideas are [Baserow community](https://community.baserow.io/) licensed** (some algorithms I developed to answer technical questions or demonstrate ideas) [Baserow](https://baserow.io/), which is publicly available.
+
 | id          | reference                               | proposal                                        | type               |  status |
 | ----------- | --------------------------------------- | ----------------------------------------------- |--------------------|---------|
 | 01 | [02](sample/02/main.py), [07](sample/07/main.py), [08](sample/08/main.py) | [Does Baserow use end-to-end encryption?](https://community.baserow.io/t/does-baserow-use-end-to-end-encryption/573), nostr-login-baserow, end-to-end   | cli/gui | mvp/poc | 

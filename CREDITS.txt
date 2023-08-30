@@ -1,6 +1,7 @@
-https://github.com/ssebs/csveditor, MIT
-https://github.com/Kalebu/ascii-encryption-python, MIT
-https://github.com/secnnet/Encryptor, MIT
+mods/forks\license
+- https://github.com/ssebs/csveditor, MIT
+- https://github.com/Kalebu/ascii-encryption-python, MIT
+- https://github.com/secnnet/Encryptor, MIT
 https://baserow.io/, website, copyright
 baserow, trademark, copyright
 https://github.com/bram2w/baserow, MIT

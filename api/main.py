@@ -96,11 +96,11 @@ def ArrayMap():
     testTitleName.append(item['testTitleName'])
   return testTitleName
 
-def ExportJson():
-  with open('my_data_baserow.json', 'w') as f:
+def ExportJson(filename):
+  with open(filename, 'w') as f:
     json.dump(listDatabase('results'), f)
   
-def ExportCSV(filename): # ExportCSV("my_data_baserow.csv")
+def ExportCSV(filename):
   return pd.DataFrame(ArrayMap()).to_csv(filename)
 
 def graph(firt_array, end_array):    
